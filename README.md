@@ -1,4 +1,4 @@
-"# moviec" 
+# Moviec
 
 - App that clone netflix with TMDB API
 
