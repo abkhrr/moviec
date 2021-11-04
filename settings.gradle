@@ -1,0 +1,20 @@
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+        jcenter()
+        maven { url 'https://jitpack.io' }
+    }
+}
+rootProject.name = "Moviec"
+include ':app'
+include ':features:home'
+include ':features:movie-detail'
+include ':features:favorite'
+include ':data'
+include ':domain'
+include ':utils'
+include ':base'
+include ':features:movies-bottom-sheet'
+include ':navigation'

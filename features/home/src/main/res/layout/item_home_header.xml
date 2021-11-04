@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    
+    <data>
+        <variable
+            name="item"
+            type="id.moviec.home.listener.ItemMovieClickListener" />
+    </data>
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="550dp"
+        android:padding="0dp"
+        android:layout_margin="0dp"
+        android:theme="@style/Theme.Moviec.NoActionBarAndStatusBar">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/background_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:onClick="@{ () -> item.movieClicked() }"
+            android:scaleType="centerCrop"
+            tools:src="@tools:sample/backgrounds/scenic[8]" />
+
+        <include
+            android:id="@+id/errorView"
+            layout="@layout/view_error"
+            android:visibility="gone" />
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="550dp"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.3"
+                android:background="@drawable/gradient_top_bottom_bg" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.7" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/view_container"
+                android:layout_width="match_parent"
+                android:layout_height="450dp"
+                android:gravity="bottom"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/gradient_bottom_top_bg"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/genres_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/space_x3"
+                        android:ellipsize="end"
+                        android:maxLines="2"
+                        android:text="Action • Explosive • Suspenseful • Exciting • Adventure"
+                        android:textColor="@color/text_primary"
+                        android:textSize="@dimen/text_x3" />
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/space_x2"
+                        android:layout_marginBottom="@dimen/space_x5"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <androidx.appcompat.widget.LinearLayoutCompat
+                            android:id="@+id/add_to_list_button"
+                            android:layout_width="80dp"
+                            android:layout_height="wrap_content"
+                            android:background="?selectableItemBackground"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:paddingVertical="@dimen/space_x2">
+
+                            <androidx.appcompat.widget.AppCompatImageView
+                                android:layout_width="@dimen/space_x6"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/ic_svg_favorite_24"
+                                app:tint="@color/white" />
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="2dp"
+                                android:text="@string/favorite"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/text_x3" />
+
+                        </androidx.appcompat.widget.LinearLayoutCompat>
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/view_button_retry"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginHorizontal="@dimen/space_x6"
+                            android:backgroundTint="@color/gray"
+                            android:drawableStart="@drawable/ic_svg_play_black_24"
+                            android:drawableLeft="@drawable/ic_svg_play_black_24"
+                            android:drawableTint="@color/black"
+                            android:text="@string/play"
+                            android:textColor="@color/black"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.498"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/text_view_error_message" />
+
+                        <androidx.appcompat.widget.LinearLayoutCompat
+                            android:id="@+id/info_button"
+                            android:layout_width="@dimen/space_x20"
+                            android:layout_height="wrap_content"
+                            android:background="?selectableItemBackground"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:paddingVertical="@dimen/space_x2">
+
+                            <androidx.appcompat.widget.AppCompatImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="@dimen/space_x6"
+                                android:src="@drawable/ic_info"
+                                app:tint="@color/white" />
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="2dp"
+                                android:text="@string/info"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/text_x3" />
+
+                        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+</layout>

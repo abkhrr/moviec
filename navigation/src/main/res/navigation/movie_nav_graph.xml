@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/movie_nav_graph"
+    app:startDestination="@id/fragment_home">
+
+    <fragment
+        android:id="@+id/fragment_home"
+        android:label="home_fragment"
+        android:name="id.moviec.home.ui.HomeFragment">
+
+        <action
+            android:id="@+id/to_favorite"
+            app:destination="@+id/fragment_favorite" />
+
+        <action
+            android:id="@+id/show_bottom_sheet"
+            app:destination="@+id/bottomSheet" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragment_favorite"
+        android:label="favorite_fragment"
+        android:name="id.moviec.favorite.ui.FavoriteFragment">
+
+        <action
+            android:id="@+id/show_bottom_sheet"
+            app:destination="@+id/bottomSheet" />
+
+    </fragment>
+
+    <dialog
+        android:id="@+id/bottomSheet"
+        android:name="id.moviec.dialog.bottom.sheet.MovieBottomSheet">
+
+        <argument
+            android:name="movie"
+            app:argType="id.moviec.domain.entities.MovieModel"/>
+
+        <action
+            android:id="@+id/to_details"
+            app:destination="@+id/fragment_movie_detail" />
+
+    </dialog>
+
+    <fragment
+        android:id="@+id/fragment_movie_detail"
+        android:label="movie_detail_fragment"
+        android:name="id.moviec.detail.ui.MovieDetailFragment">
+
+        <argument
+            android:name="movie"
+            app:argType="id.moviec.domain.entities.MovieModel"/>
+
+    </fragment>
+
+    <!--
+    Fragment will be undefined (red marks)
+    because IDE cannot read the package
+    -->
+
+</navigation>

@@ -1,0 +1,197 @@
+ext {
+    //Android
+    androidBuildToolsVersion  = "30.0.3"
+    androidMinSdkVersion      = 23
+    androidTargetSdkVersion   = 31
+    androidCompileSdkVersion  = 31
+    androidVersionCode        = 1
+    androidVersionName        = "1.0.0"
+    androidAppId              = "id.moviec"
+
+    //Lib
+    retrofitVersion           = '2.9.0'
+    rxJavaVersion             = '2.2.21'
+    rxAndroid                 = '2.1.1'
+    daggerVersion             = '2.38.1'
+    okhttpVersion             = '5.0.0-alpha.2'
+    gsonVersion               = '2.8.7'
+    androidAnnotationsVersion = '29.0.1'
+    glideVersion              = '4.12.0'
+    workRunTimeVersion        = '2.7.0-alpha05'
+    lottieVersion             = '4.0.0'
+    shimmerVersion            = "0.5.0"
+    roomKtxVersion            = "2.3.0"
+
+    //androidX
+    constraintVersion         = '2.0.4'
+    androidxVersion           = '1.4.0-alpha03'
+    coreVersion               = "1.6.0"
+    coreTestVersion           = "2.1.0"
+    pagingVersion             = '2.1.0'
+    roomVersion               = '2.3.0'
+    lifecycleVersion          = '2.4.0-alpha02'
+    lifeCycleArchVersion      = '1.1.1'
+    navVersion                = '2.3.5'
+    koinVersion               = '2.0.1'
+    coroutinesVersion         = '1.5.1-native-mt'
+    coroutinesTestVersion     = '1.3.7'
+    fragmentTestVersion       = '1.2.5'
+    hilt                      = '2.38.1'
+    hilt_lifecycle_viewmodel  = '1.0.0-alpha03'
+    recyclerViewVersion       = "1.2.1"
+    swipeRefreshLayoutVersion = "1.1.0"
+    materialVersion           = "1.4.0"
+    cardViewVersion           = "1.0.0"
+    appCompatVersion          = "1.4.0-alpha03"
+
+    // Kotlin & Kotlin std lib
+    kotlinStdLib              = "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+
+    //test
+    jUnitVersion              = '4.12'
+    espressoVersion           = '3.4.0'
+    testRunnerVersion         = '1.2.0'
+    jUnitVersion              = '4.12'
+    assertJVersion            = '3.8.0'
+    mockitoVersion            = '2.8.47'
+
+    //compose
+    composeVersion            = "1.0.0-beta01"
+    activityComposeVersion    = "1.3.0-alpha02"
+    activityKtx               = "1.2.0-alpha03"
+
+    //firebase
+    firebaseVersion           = "28.2.0"
+    firebaseMessagingVersion  = "22.0.0"
+
+    //logs
+    chuckerVersion            = "3.5.0"
+    timberVersion             = "4.7.1"
+
+    compose = [
+            ui        : "androidx.compose.ui:ui:$composeVersion",
+            tooling   : "androidx.compose.ui:ui-tooling:$composeVersion",
+            foundation: "androidx.compose.foundation:foundation:$composeVersion",
+            runtime   : "androidx.compose.runtime:runtime:$composeVersion",
+            livedata  : "androidx.compose.runtime:runtime-livedata:$composeVersion",
+            rxjava    : "androidx.compose.runtime:runtime-rxjava2:$composeVersion",
+            material  : [
+                    "androidx.compose.material:material:$composeVersion",
+                    "androidx.compose.material:material-icons-core:$composeVersion",
+                    "androidx.compose.material:material-icons-extended:$composeVersion"
+            ]
+    ]
+
+    firebaseLibs = [
+            bom           : "com.google.firebase:firebase-bom:28.4.1",
+            analyticsKtx  : "com.google.firebase:firebase-analytics-ktx",
+            crashlitycsKtx: "com.google.firebase:firebase-crashlytics-ktx",
+            messaging     : "com.google.firebase:firebase-messaging:$firebaseMessagingVersion",
+            basement      : "com.google.android.gms:play-services-basement:17.6.0",
+            firebaseAsync : "com.loopj.android:android-async-http:1.4.9"
+    ]
+
+    logs = [
+            timber     : "com.jakewharton.timber:timber:$timberVersion",
+            chucker    : "com.github.chuckerteam.chucker:library:$chuckerVersion",
+            chuckerNoOp: "com.github.chuckerteam.chucker:library-no-op:$chuckerVersion"
+    ]
+
+    libs = [
+            retrofit                 : [
+                    "com.squareup.retrofit2:retrofit:$retrofitVersion",
+                    "com.squareup.retrofit2:adapter-rxjava2:$retrofitVersion",
+                    "com.squareup.retrofit2:converter-gson:$retrofitVersion",
+                    "com.squareup.retrofit2:converter-moshi:$retrofitVersion"
+            ],
+            rxjava                   : [
+                    "io.reactivex.rxjava2:rxjava:$rxJavaVersion",
+                    "io.reactivex.rxjava2:rxandroid:$rxAndroid"
+            ],
+
+            dagger                   : "com.google.dagger:dagger:$daggerVersion",
+            daggerCompiler           : "com.google.dagger:dagger-compiler:$daggerVersion",
+            daggerAndroid            : "com.google.dagger:dagger-android:$daggerVersion",
+            daggerAndroidSupport     : "com.google.dagger:dagger-android-support:$daggerVersion",
+            daggerAnnotationProcessor: "com.google.dagger:dagger-android-processor:$daggerVersion",
+            okhttp                   : "com.squareup.okhttp3:logging-interceptor:$okhttpVersion",
+            okhttpLoggingInterceptor : "com.squareup.okhttp3:logging-interceptor:$okhttpVersion",
+            gson                     : "com.google.code.gson:gson:$gsonVersion",
+            androidAnnotations       : "com.android.support:support-annotations:$androidAnnotationsVersion",
+            glide                    : "com.github.bumptech.glide:glide:$glideVersion",
+            glideCompiler            : "com.github.bumptech.glide:compiler:4.12.0",
+            circleImageView          : 'de.hdodenhof:circleimageview:3.1.0',
+            hiltAndroid              : "com.google.dagger:hilt-android:$hilt",
+            hiltCompilerAndroid      : "com.google.dagger:hilt-android-compiler:$hilt",
+
+            hiltLivecycleVM          : "androidx.hilt:hilt-lifecycle-viewmodel:$hilt_lifecycle_viewmodel",
+            hiltCompilerLivecycleVM  : "androidx.hilt:hilt-compiler:$hilt_lifecycle_viewmodel",
+
+            materialDialogsExternal  : "com.afollestad.material-dialogs:core:3.3.0",
+            lottie                   : "com.airbnb.android:lottie:$lottieVersion",
+            shimmer                  : "com.facebook.shimmer:shimmer:$shimmerVersion",
+            workRunTime              : "androidx.work:work-runtime:$workRunTimeVersion",
+            gifDrawable              : "pl.droidsonroids.gif:android-gif-drawable:1.2.23",
+            intuitSdp                : "com.intuit.sdp:sdp-android:1.0.6",
+            intuitSsp                : "com.intuit.ssp:ssp-android:1.0.6",
+            guava                    : "com.google.guava:guava:30.1.1-jre",
+            easyPermisson            : "pub.devrel:easypermissions:3.0.0",
+            imagePicker              : "com.github.esafirm.android-image-picker:imagepicker:2.2.0",
+            rxImagePicker            : "com.github.esafirm.android-image-picker:rximagepicker:2.2.0",
+            dhavalImagePicker        : "com.github.dhaval2404:imagepicker:1.6",
+            coil                     : "io.coil-kt:coil:1.3.1",
+            customToast              : "com.github.GrenderG:Toasty:1.5.0",
+            loopjAsync               : "com.loopj.android:android-async-http:1.4.11"
+    ]
+
+    support = [
+            material             : "com.google.android.material:material:$materialVersion",
+            appcompat            : "androidx.appcompat:appcompat:$appCompatVersion",
+            cardview             : "androidx.cardview:cardview:$cardViewVersion",
+            constraint           : "androidx.constraintlayout:constraintlayout:$constraintVersion",
+            recyclerview         : "androidx.recyclerview:recyclerview:$recyclerViewVersion",
+            support              : "androidx.legacy:legacy-support-v4:$androidxVersion",
+            swiperefreshlayout   : "androidx.swiperefreshlayout:swiperefreshlayout:$swipeRefreshLayoutVersion",
+            design               : "com.google.android.material:material:$androidxVersion",
+            kotlinextensions     : "org.jetbrains.kotlin:kotlin-android-extensions-runtime:$kotlin_version",
+            core                 : "androidx.core:core-ktx:$coreVersion",
+            paging               : "androidx.paging:paging-runtime:$pagingVersion",
+            activityCompose      : "androidx.activity:activity-compose:$activityComposeVersion",
+            activityKtx          : "androidx.activity:activity-ktx:$activityKtx",
+    ]
+
+    commons = [
+            navigationFragment   : "androidx.navigation:navigation-fragment-ktx:$navVersion",
+            navigationUi         : "androidx.navigation:navigation-ui-ktx:$navVersion",
+            lifecycle            : "android.arch.lifecycle:extensions:$lifeCycleArchVersion",
+            lifecycleVM          : "androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycleVersion",
+            lifecycleVMSavedState: "androidx.lifecycle:lifecycle-viewmodel-savedstate:$lifecycleVersion",
+            coroutines           : "org.jetbrains.kotlinx:kotlinx-coroutines-android:$coroutinesVersion",
+            coroutinesCore       : "org.jetbrains.kotlinx:kotlinx-coroutines-core:$coroutinesVersion",
+            roomCompiler         : "androidx.room:room-compiler:$roomVersion",
+            room                 : "androidx.room:room-runtime:$roomVersion",
+            roomRxJava           : "androidx.room:room-rxjava2:$roomVersion",
+            roomCommon           : "androidx.room:room-common:$roomVersion",
+            roomKtx              : "androidx.room:room-ktx:$roomKtxVersion",
+            browser              : "androidx.browser:browser:1.3.0"
+    ]
+
+    players = [
+            androidYoutubePlayer : "com.pierfrancescosoffritti.androidyoutubeplayer:core:10.0.5",
+            youtubeDl            : "com.github.yausername.youtubedl-android:library:0.12.4",
+            exoMedia             : "com.devbrackets.android:exomedia:4.3.0"
+    ]
+
+    test = [
+            jUnit         : "junit:junit:$jUnitVersion",
+            espresso      : "androidx.test.espresso:espresso-core:$espressoVersion",
+            testRunner    : "androidx.test:runner:$testRunnerVersion",
+            assertj       : "org.assertj:assertj-core:$assertJVersion",
+            mockito       : "org.mockito:mockito-core:$mockitoVersion",
+            mockitoInline : "org.mockito:mockito-inline:$mockitoVersion",
+            coreTest      : "androidx.arch.core:core-testing:$coreTestVersion",
+            coroutinesTest: "org.jetbrains.kotlinx:kotlinx-coroutines-test:$coroutinesVersion",
+            fragmentTest  : "androidx.fragment:fragment-testing:$fragmentTestVersion",
+            jUnitExt      : "androidx.test.ext:junit:1.1.3"
+    ]
+}

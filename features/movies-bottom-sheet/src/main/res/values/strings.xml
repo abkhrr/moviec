@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="play">Play</string>
+    <string name="details_amp_more"><![CDATA[Details & More]]></string>
+    <string name="preview">Preview</string>
+    <string name="added_favorite" translatable="false">Movies Added To Favorite.</string>
+    <string name="deleted_favorite" translatable="false">Movies Deleted From Favorite.</string>
+</resources>

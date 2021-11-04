@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <dimen name="extra_space_01">1dp</dimen>
+    <dimen name="extra_space_02">2dp</dimen>
+    <dimen name="space_x0">0dp</dimen>
+    <dimen name="space_x1">4dp</dimen>
+    <dimen name="space_x2">8dp</dimen>
+    <dimen name="space_x3">12dp</dimen>
+    <dimen name="space_x4">16dp</dimen>
+    <dimen name="space_x5">20dp</dimen>
+    <dimen name="space_x6">24dp</dimen>
+    <dimen name="space_x7">28dp</dimen>
+    <dimen name="space_x8">32dp</dimen>
+    <dimen name="space_x9">36dp</dimen>
+    <dimen name="space_x10">40dp</dimen>
+
+    <dimen name="space_x11">44dp</dimen>
+    <dimen name="space_x12">48dp</dimen>
+    <dimen name="space_x13">52dp</dimen>
+    <dimen name="space_x14">56dp</dimen>
+    <dimen name="space_x15">60dp</dimen>
+    <dimen name="space_x16">64dp</dimen>
+    <dimen name="space_x17">68dp</dimen>
+    <dimen name="space_x18">72dp</dimen>
+    <dimen name="space_x19">76dp</dimen>
+    <dimen name="space_x20">82dp</dimen>
+
+    <dimen name="space_x21">86dp</dimen>
+    <dimen name="space_x22">90dp</dimen>
+    <dimen name="space_x23">94dp</dimen>
+    <dimen name="space_x24">98dp</dimen>
+    <dimen name="space_x25">102dp</dimen>
+    <dimen name="space_x26">106dp</dimen>
+    <dimen name="space_x27">108dp</dimen>
+    <dimen name="space_x28">112dp</dimen>
+    <dimen name="space_x29">116dp</dimen>
+    <dimen name="space_x30">120dp</dimen>
+
+    <dimen name="space_x31">124dp</dimen>
+    <dimen name="space_x32">128dp</dimen>
+    <dimen name="space_x33">132dp</dimen>
+    <dimen name="space_x34">136dp</dimen>
+    <dimen name="space_x35">140dp</dimen>
+    <dimen name="space_x36">144dp</dimen>
+    <dimen name="space_x37">148dp</dimen>
+    <dimen name="space_x38">152dp</dimen>
+    <dimen name="space_x39">156dp</dimen>
+    <dimen name="space_x40">160dp</dimen>
+
+    <dimen name="space_x41">164dp</dimen>
+    <dimen name="space_x42">168dp</dimen>
+    <dimen name="space_x43">172dp</dimen>
+    <dimen name="space_x44">176dp</dimen>
+    <dimen name="space_x45">180dp</dimen>
+
+    <dimen name="space_x46">182dp</dimen>
+    <dimen name="space_x47">186dp</dimen>
+    <dimen name="space_x48">190dp</dimen>
+    <dimen name="space_x49">194dp</dimen>
+    <dimen name="space_x50">198dp</dimen>
+
+    <dimen name="space_x51">202dp</dimen>
+    <dimen name="space_x52">206dp</dimen>
+    <dimen name="space_x53">210dp</dimen>
+    <dimen name="space_x54">214dp</dimen>
+    <dimen name="space_x55">218dp</dimen>
+    <dimen name="space_x56">222dp</dimen>
+    <dimen name="space_x57">226dp</dimen>
+    <dimen name="space_x58">230dp</dimen>
+    <dimen name="space_x59">234dp</dimen>
+
+    <dimen name="space_x60">238dp</dimen>
+    <dimen name="space_x61">242dp</dimen>
+    <dimen name="space_x62">246dp</dimen>
+    <dimen name="space_x63">250dp</dimen>
+    <dimen name="space_x64">254dp</dimen>
+    <dimen name="space_x65">258dp</dimen>
+    <dimen name="space_x66">262dp</dimen>
+    <dimen name="space_x67">266dp</dimen>
+    <dimen name="space_x68">270dp</dimen>
+    <dimen name="space_x69">274dp</dimen>
+    <dimen name="space_x70">278dp</dimen>
+
+    <dimen name="space_x71">282dp</dimen>
+    <dimen name="space_x72">286dp</dimen>
+    <dimen name="space_x73">290dp</dimen>
+    <dimen name="space_x74">294dp</dimen>
+    <dimen name="space_x75">298dp</dimen>
+
+    <!--- === TEXT RESOURCES === -->
+
+    <dimen name="text_x0">0sp</dimen>
+    <dimen name="text_x1">4sp</dimen>
+    <dimen name="text_x2">8sp</dimen>
+    <dimen name="text_x3">12sp</dimen>
+    <dimen name="text_x4">14sp</dimen>
+    <dimen name="text_x5">16sp</dimen>
+    <dimen name="text_x6">20sp</dimen>
+    <dimen name="text_x7">24sp</dimen>
+    <dimen name="text_x8">28sp</dimen>
+    <dimen name="text_x9">32sp</dimen>
+    <dimen name="text_x10">36sp</dimen>
+    <dimen name="text_x11">40sp</dimen>
+
+    <dimen name="text_x12">44sp</dimen>
+    <dimen name="text_x13">48sp</dimen>
+    <dimen name="text_x14">52sp</dimen>
+    <dimen name="text_x15">56sp</dimen>
+    <dimen name="text_x16">60sp</dimen>
+    <dimen name="text_x17">64sp</dimen>
+    <dimen name="text_x18">68sp</dimen>
+    <dimen name="text_x19">72sp</dimen>
+    <dimen name="text_x20">76sp</dimen>
+    <dimen name="text_x21">82sp</dimen>
+</resources>

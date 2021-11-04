@@ -1,0 +1,6 @@
+apply from: "$rootDir/build-system/dependencies.gradle"
+dependencies {
+    implementation players.androidYoutubePlayer
+    implementation players.youtubeDl
+    implementation players.exoMedia
+}

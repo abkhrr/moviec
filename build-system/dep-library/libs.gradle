@@ -1,0 +1,58 @@
+apply from: "$rootDir/build-system/dependencies.gradle"
+
+dependencies {
+    // ANDROID WORK RUN-TIMER
+    implementation libs.workRunTime
+
+    // ROUNDED IMAGE
+    implementation libs.circleImageView
+
+    // RX_JAVA CONVERTER
+    implementation libs.rxjava
+
+    // RETROFIT
+    implementation libs.retrofit
+
+    // GSON
+    implementation libs.gson
+
+    // OK-HTTP
+    implementation libs.okhttp
+    implementation libs.okhttpLoggingInterceptor
+
+    // Dialog
+    implementation libs.materialDialogsExternal
+
+    //hilt
+    implementation libs.hiltAndroid
+    kapt libs.hiltCompilerAndroid
+
+    //hilt livecycle vm
+    implementation libs.hiltLivecycleVM
+    kapt libs.hiltCompilerLivecycleVM
+
+    // GLIDE LIBRARY
+    implementation libs.glide
+    annotationProcessor libs.glideCompiler
+
+    // LOTTIE AND OTHER ANIMATION PLAYER
+    implementation libs.lottie
+    implementation libs.shimmer
+
+    // Gif drawable
+    implementation libs.gifDrawable
+
+    // Coil for image loading
+    implementation libs.coil
+
+    // Android Async
+    implementation libs.loopjAsync
+
+    // Custom Toast
+    implementation libs.customToast
+
+    //Socket.io
+    implementation ('io.socket:socket.io-client:2.0.0') {
+        exclude group: 'org.json', module: 'json'
+    }
+}

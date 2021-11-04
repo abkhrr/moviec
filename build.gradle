@@ -1,0 +1,28 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+apply from: "$rootDir/build-system/dependencies.gradle"
+
+buildscript {
+    ext.kotlin_version = "1.5.31"
+
+    repositories {
+        google()
+        mavenCentral()
+        maven { url 'https://jitpack.io' }
+    }
+
+    dependencies {
+        def nav_version            = "2.3.5"
+        def build_gradle_version   = '7.0.1'
+
+        classpath "com.android.tools.build:gradle:$build_gradle_version"
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+        classpath "androidx.navigation:navigation-safe-args-gradle-plugin:$nav_version"
+
+        def hilt = "2.37"
+        classpath "com.google.dagger:hilt-android-gradle-plugin:$hilt"
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}

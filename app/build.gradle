@@ -1,0 +1,60 @@
+plugins {
+    id 'com.android.application'
+    id 'kotlin-android'
+    id 'kotlin-kapt'
+    id 'androidx.navigation.safeargs.kotlin'
+    id 'kotlin-parcelize'
+    id 'org.jetbrains.kotlin.android'
+    id 'dagger.hilt.android.plugin'
+}
+
+def configProperties = new Properties()
+configProperties.load(new FileInputStream(file("config.properties")))
+
+android {
+    defaultConfig {
+        applicationId androidAppId
+    }
+
+    buildTypes {
+        debug {
+            debuggable true
+            minifyEnabled false
+            shrinkResources false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            buildConfigField("String", "BASE_URL", configProperties['cfgUrl.baseUrl'])
+        }
+
+        release {
+            debuggable false
+            minifyEnabled false
+            shrinkResources false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            buildConfigField("String", "BASE_URL", configProperties['cfgUrl.baseUrl'])
+        }
+    }
+}
+
+apply from: "$rootDir/build-system/android/android.gradle"
+apply from: "$rootDir/build-system/common/common.gradle"
+apply from: "$rootDir/build-system/dep-library/libs.gradle"
+apply from: "$rootDir/build-system/logs/logs.gradle"
+apply from: "$rootDir/build-system/support/support.gradle"
+apply from: "$rootDir/build-system/test/test.gradle"
+
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation project(":base")
+    implementation project(":data")
+    implementation project(":domain")
+    implementation project(":features:home")
+    implementation project(":features:movie-detail")
+    implementation project(":features:movies-bottom-sheet")
+    implementation project(":features:favorite")
+    implementation project(":navigation")
+    implementation project(":utils")
+    implementation 'androidx.appcompat:appcompat:1.3.1'
+    implementation 'com.google.android.material:material:1.4.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.1'
+}

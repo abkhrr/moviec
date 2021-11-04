@@ -1,0 +1,7 @@
+apply from: "$rootDir/build-system/dependencies.gradle"
+
+dependencies {
+    debugImplementation logs.chucker
+    releaseImplementation logs.chuckerNoOp
+    implementation logs.timber
+}
